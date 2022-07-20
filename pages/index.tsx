@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
   // Connect your marketplace smart contract here (replace this address)
   const marketplace = useMarketplace(
-    "0x277C0FB19FeD09c785448B8d3a80a78e7A9B8952" // Your marketplace contract address here
+    "0x14ed62C4c71e0C84AeA450Db25A9400e9d567262" // Your marketplace contract address here
   );
 
   const { data: listings, isLoading: loadingListings } =
@@ -24,18 +24,18 @@ const Home: NextPage = () => {
       {/* Content */}
       <div className={styles.container}>
         {/* Top Section */}
-        <h1 className={styles.h1}>NFT Marketplace w/ thirdweb + Next.JS</h1>
+        <h1 className={styles.h1}>NFT Marketplace | your site name |</h1>
         <p className={styles.explain}>
-          Build an NFT marketplace using{" "}
+          Build an NFT marketplace with{" "}
           <b>
             {" "}
             <a
-              href="https://thirdweb.com/"
+              href="https://digitalnomadlabs.io/"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.purple}
             >
-              thirdweb
+              Digital Nomad Labs
             </a>
           </b>{" "}
           to list your ERC721 and ERC1155 tokens for auction or for direct sale.
